@@ -4,8 +4,6 @@ PImage bg2;
 PImage enemy;
 PImage hp;
 PImage treasure;
-float qq;
-float ee;
 
 int x,y,z,a,b,c,enemyY,e,g,BGX,hpx;
 
@@ -21,9 +19,7 @@ void setup () {
   a = floor(random(20,180));
  b=1;
  enemyY = floor(random(50,150));
-    qq =height/2;
-  ee= width/2;
-  
+
   
   size(640,480) ;
   bg1 = loadImage("img/bg1.png") ;
@@ -64,7 +60,7 @@ void draw() {
      fill(#FF0D39);
 rect(10,10,hpx,30);   
 image(hp,0,10);
-  image(fighter,ee,qq);
+  image(fighter,580,240);
   
   image(enemy,0+x,e);image(enemy,100+x,e);image(enemy,200+x,e); image(enemy,300+x,e); image(enemy,400+x,e);
 
